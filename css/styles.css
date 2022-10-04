@@ -1,0 +1,127 @@
+@import 'modal.css';
+@import 'button.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+  background-color: #000;
+}
+
+.nav-container {
+  height: 5rem;
+  background-color: #ff8400;
+  width: 100%;
+  padding: 0 1.25rem;
+  display: flex;
+  align-items: center;
+
+}
+
+.nav-main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-main h1 {
+  color: #fff;
+  font-size: 2.25rem;
+}
+
+.nav-main .contact-link {
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-container {
+  width: 100%;
+  padding: 2.50rem 1.25rem;
+}
+
+.card-form {
+  background-color: #333;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.form-control {
+  margin-bottom: 1.25rem;
+
+}
+
+.form-control label {
+  display: none;
+}
+
+.error-msg {
+  margin-top: 0.25rem;
+  color: #faa;
+}
+
+.form-input {
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 4px;
+  padding: 0 1.25rem;
+  font-size: 0.85rem;
+  border: 0;
+  outline: 0;
+}
+
+.form-input::placeholder {
+  color: #c9c9c9;
+}
+
+.form-input:disabled {
+  background-color: #ddd;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-container {
+  width: 100%;
+  padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-list-item {
+  width: 100%;
+  max-width: 900px;
+  background-color: #333;
+  margin-bottom: 1.25rem;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.card-list-item h3 {
+  color: #ff8400;
+  font-size: 1.125rem;
+}
+
+.card-list-item p:nth-child(2) {
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.card-list-item p:nth-child(3) {
+  color: #8f8f8f;
+  font-size: 0.75rem;
+}

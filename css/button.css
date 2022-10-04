@@ -1,0 +1,18 @@
+.btn {
+  width: 250px;
+  height: 2.5rem;
+  background-color: #ff8400;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.btn-left {
+  margin-right: 10px;
+}
+
+.btn-right {
+  margin-left: 10px;
+}
