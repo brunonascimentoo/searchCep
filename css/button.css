@@ -1,8 +1,19 @@
+:root {
+  --white: #fff;
+  --gray-100: #e1e1e6;
+  --gray-300: #c4c4cc;
+  --gray-400: #8d8d99;
+  --gray-600: #323238;
+  --gray-700: #29292e;
+  --gray-800: #202024;
+  --gray-900: #121214;
+}
+
 .btn {
   width: 250px;
   height: 2.5rem;
-  background-color: #ff8400;
-  color: #fff;
+  background-color: var(--gray-800);
+  color: var(--gray-300);
   border: 0;
   border-radius: 4px;
   font-weight: 700;
