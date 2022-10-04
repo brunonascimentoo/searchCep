@@ -105,6 +105,7 @@ body {
 
 .form-input:disabled {
   background-color: var(--gray-50);
+  cursor: not-allowed;
 }
 
 .btn-container {
