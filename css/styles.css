@@ -122,6 +122,9 @@ body {
 }
 
 .card-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: 900px;
   background-color: var(--gray-400);
@@ -148,4 +151,14 @@ body {
   font-size: 0.75rem;
   font-weight: 700;
   margin-top: 0.25rem;
+}
+
+.ph-trash-bold {
+  font-size: 1.50rem;
+  color: var(--red-500);
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
 }

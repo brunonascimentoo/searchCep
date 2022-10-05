@@ -17,6 +17,10 @@ function createCard(address) {
   const div = document.createElement('div');
   div.classList.add('card-list-item');
 
+  const div2 = document.createElement('div')
+  const div3 = document.createElement('div')
+  // div2.classList.add('card-list-item')
+
 
   const h3 = document.createElement('h3');
   h3.innerHTML = address.city;
@@ -27,9 +31,18 @@ function createCard(address) {
   const cep = document.createElement('p');
   cep.innerHTML = address.cep;
 
+  const trash = document.createElement('i');
+  trash.classList.add('ph-trash-bold');
+
   div.appendChild(h3);
   div.appendChild(p);
   div.appendChild(cep);
+  div.appendChild(div2)
+  div.appendChild(div3)
+  div2.appendChild(h3)
+  div2.appendChild(p)
+  div2.appendChild(cep)
+  div3.appendChild(trash)
 
   return div;
 }
