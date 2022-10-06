@@ -38,7 +38,6 @@ function handleContainerClick(e) {
 
 function openInsta(e) {
   e.preventDefault();
-
   if (e.target) {
     window.open(e.target)
   }
