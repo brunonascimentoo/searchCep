@@ -35,3 +35,8 @@
   color: #eee;
   margin-bottom: 2.50rem;
 }
+
+.modal-content a {
+  text-decoration: none;
+  color: #fff;
+}
