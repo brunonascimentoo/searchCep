@@ -31,6 +31,7 @@ export function init() {
 
   state.errorCep = document.querySelector('[data-error="cep"]')
   state.errorNumber = document.querySelector('[data-error="number"]')
+  state.removeCard = document.querySelector('#removeCardList')
 
   state.inputNumber.addEventListener('change', handleInputNumberChange);
   state.inputNumber.addEventListener('keyup', handleInputNumberKeyUp);
@@ -38,7 +39,6 @@ export function init() {
 
   state.btnClear.addEventListener('click', handleBtnClearClick);
   state.btnSave.addEventListener('click', handleBtnSaveClick);
-
 }
 
 function handleInputNumberKeyUp(e) {
@@ -75,7 +75,7 @@ async function handleInputCepChange(e) {
 
 }
 
-function handleBtnSaveClick(e) {
+export function handleBtnSaveClick(e) {
   e.preventDefault();
 
   const error = addressService.getErrors(state.address);
