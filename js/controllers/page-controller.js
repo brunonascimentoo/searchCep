@@ -1,5 +1,4 @@
-import * as modalController from './modal-controller.js'
-import * as listController from './list-controller.js'
+import * as modalController from './modal-controller.js';
 
 
 export function init() {
@@ -16,14 +15,11 @@ function handleContactLinkClick(e) {
 
 }
 
-export function removeCard(e) {
+function removeCard(e) {
   const el = e.target;
-  const hideCardCep = document.querySelector('.card-list-item')
-
-
+  const removeCardFromDiv = document.querySelector('.card-list-item')
   if (el) {
-    hideCardCep.classList.add('hide')
-    console.log(el)
+    removeCardFromDiv.remove()
+    return;
   }
-
 }
