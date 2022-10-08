@@ -2,11 +2,11 @@ import * as modalController from './modal-controller.js';
 
 
 export function init() {
-  const contactLink = document.querySelector('.contact-link')
-  contactLink.addEventListener('click', handleContactLinkClick)
+  const contactLink = document.querySelector('.contact-link');
+  contactLink.addEventListener('click', handleContactLinkClick);
 
-  const removeCardList = document.querySelector('#removeCardList')
-  removeCardList.addEventListener('click', removeCard)
+  const removeCardList = document.querySelector('#removeCardList');
+  removeCardList.addEventListener('click', removeCard);
 }
 
 function handleContactLinkClick(e) {
@@ -17,9 +17,9 @@ function handleContactLinkClick(e) {
 
 function removeCard(e) {
   const el = e.target;
-  const removeCardFromDiv = document.querySelector('.card-list-item')
+  const removeCardFromDiv = document.querySelector('.card-list-item');
   if (el) {
-    removeCardFromDiv.remove()
+    removeCardFromDiv.remove();
     return;
   }
 }

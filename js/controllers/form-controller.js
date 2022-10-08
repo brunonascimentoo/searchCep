@@ -1,6 +1,6 @@
 import Address from "../models/address.js";
-import * as addressService from '../services/address-service.js'
-import * as listController from './list-controller.js'
+import * as addressService from '../services/address-service.js';
+import * as listController from './list-controller.js';
 
 function State() {
 
@@ -26,12 +26,12 @@ export function init() {
   state.inputNumber = document.forms.newAddress.number;
   state.inputCity = document.forms.newAddress.city;
 
-  state.btnSave = document.forms.newAddress.btnSave
-  state.btnClear = document.forms.newAddress.btnClear
+  state.btnSave = document.forms.newAddress.btnSave;
+  state.btnClear = document.forms.newAddress.btnClear;
 
-  state.errorCep = document.querySelector('[data-error="cep"]')
-  state.errorNumber = document.querySelector('[data-error="number"]')
-  state.removeCard = document.querySelector('#removeCardList')
+  state.errorCep = document.querySelector('[data-error="cep"]');
+  state.errorNumber = document.querySelector('[data-error="number"]');
+  state.removeCard = document.querySelector('#removeCardList');
 
   state.inputNumber.addEventListener('change', handleInputNumberChange);
   state.inputNumber.addEventListener('keyup', handleInputNumberKeyUp);
@@ -49,7 +49,7 @@ function handleInputNumberChange(e) {
   if (e.target.value === '') {
     setFormError('number', 'campo requerido');
   } else {
-    setFormError('number', '')
+    setFormError('number', '');
   }
 }
 
@@ -62,7 +62,7 @@ async function handleInputCepChange(e) {
     state.inputCity.value = address.city;
     state.address = address;
 
-    setFormError('cep', '')
+    setFormError('cep', '');
 
     state.inputNumber.focus();
   }
@@ -70,7 +70,7 @@ async function handleInputCepChange(e) {
     state.inputStreet.value = '';
     state.inputCity.value = '';
     state.inputNumber.value = '';
-    setFormError('cep', 'informe um cep válido')
+    setFormError('cep', 'informe um cep válido');
   }
 
 }
@@ -79,11 +79,11 @@ export function handleBtnSaveClick(e) {
   e.preventDefault();
 
   const error = addressService.getErrors(state.address);
-  const keys = Object.keys(error)
+  const keys = Object.keys(error);
 
   if (keys.length > 0) {
     keys.forEach(key => {
-      setFormError(key, error[key])
+      setFormError(key, error[key]);
     })
   }
   else {
@@ -113,6 +113,6 @@ function clearForm() {
 }
 
 function setFormError(key, value) {
-  const el = document.querySelector(`[data-error="${key}"]`)
+  const el = document.querySelector(`[data-error="${key}"]`);
   el.innerHTML = value;
 }
